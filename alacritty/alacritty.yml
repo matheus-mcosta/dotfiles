@@ -1,1 +1,77 @@
-/Users/matheuscosta/.config/alacritty/alacritty.yml
+# The definition of color schemes.
+schemes:
+  gruvbox_material_hard_dark: &gruvbox_material_hard_dark
+    primary:
+      background: '0x141617'
+      foreground: '0xd4be98'
+    normal:
+      black:   '0x32302f'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+    bright:
+      black:   '0x32302f'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+# Apply the color scheme.
+
+selection:
+  save_to_clipboard: true
+  text: CellBackground
+
+window:
+  opacity: 0.99
+  dimensions:
+    columns: 110
+    lines: 40
+  padding:
+    x: 4
+    y: 0
+  decorations: none
+  startup_mode: Windowed
+  dynamic_title: true
+
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+
+font:
+  normal:
+    family: MesloLGM Nerd Font Mono
+    style: Regular
+  bold:
+    family: MesloLGM Nerd Font Mono
+    style: Bold
+  italic:
+    family: MesloLGM Nerd Font Mono
+    style: Italic
+  size: 17.0
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+draw_bold_text_with_bright_colors: false
+
+# TokyoNight Alacritty Colors
+colors: *gruvbox_material_hard_dark
+  # Default colors
+  # primary:
+  #   background: "0x24283b"
+  #   foreground: "0xc0caf5"
+
+shell:
+  program: /opt/homebrew/bin/tmux
